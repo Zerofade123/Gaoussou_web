@@ -6,14 +6,10 @@
   const themeToggle = document.querySelector('#theme-toggle');
   const mobileActions = document.createElement('div');
   mobileActions.className = 'nav-mobile-actions';
-  const mobileThemeToggle = document.createElement('button');
-  mobileThemeToggle.className = 'mobile-theme-toggle';
-  mobileThemeToggle.type = 'button';
-  mobileThemeToggle.setAttribute('aria-label', 'Switch theme');
   const mobileResumeLink = document.createElement('a');
   mobileResumeLink.href = 'resume.html';
   mobileResumeLink.textContent = 'View résumé';
-  mobileActions.append(mobileThemeToggle, mobileResumeLink);
+  mobileActions.append(mobileResumeLink);
   nav.append(mobileActions);
 
   const preferredTheme = localStorage.getItem('theme');
@@ -23,19 +19,11 @@
     document.body.classList.toggle('light', light);
     themeToggle.textContent = light ? '☀' : '☾';
     themeToggle.setAttribute('aria-label', `Switch to ${light ? 'dark' : 'light'} theme`);
-    mobileThemeToggle.textContent = light ? 'Switch to dark theme' : 'Switch to light theme';
-    mobileThemeToggle.setAttribute('aria-label', `Switch to ${light ? 'dark' : 'light'} theme`);
     root.style.colorScheme = light ? 'light' : 'dark';
   }
 
   setTheme(useLight);
   themeToggle.addEventListener('click', () => {
-    const light = !document.body.classList.contains('light');
-    setTheme(light);
-    localStorage.setItem('theme', light ? 'light' : 'dark');
-  });
-
-  mobileThemeToggle.addEventListener('click', () => {
     const light = !document.body.classList.contains('light');
     setTheme(light);
     localStorage.setItem('theme', light ? 'light' : 'dark');
@@ -55,6 +43,14 @@
   });
 
   addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 12), { passive: true });
+
+  document.querySelectorAll('a[href="#top"]').forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      history.replaceState(null, '', `${location.pathname}${location.search}`);
+    });
+  });
 
   const reveals = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
