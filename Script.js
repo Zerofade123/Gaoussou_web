@@ -89,7 +89,7 @@
   };
 
   async function loadContent(path) {
-    const response = await fetch(path, { cache: 'no-cache' });
+    const response = await fetch(`${path}?v=${Date.now()}`, { cache: 'no-store' });
     if (!response.ok) throw new Error(`Unable to load ${path}`);
     return response.json();
   }

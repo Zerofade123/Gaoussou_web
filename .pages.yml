@@ -43,3 +43,48 @@ content:
           - { name: summary, label: Summary, type: text }
           - { name: image, label: Certificate image, type: image }
           - { name: published, label: Published, type: boolean, default: true }
+
+  - name: resume
+    label: Resume
+    type: file
+    path: content/resume.json
+    fields:
+      - name: profile
+        label: Profile
+        type: object
+        fields:
+          - { name: name, label: Full name, type: string, required: true }
+          - { name: headline, label: Professional headline, type: string, required: true }
+          - { name: location, label: Location, type: string }
+          - { name: email, label: Public email, type: string }
+          - { name: linkedin, label: LinkedIn URL, type: string }
+          - { name: github, label: GitHub URL, type: string }
+          - { name: website, label: Website URL, type: string }
+      - { name: summary, label: Professional summary, type: text, required: true }
+      - name: skillGroups
+        label: Skill groups
+        type: object
+        list: true
+        fields:
+          - { name: label, label: Group name, type: string, required: true }
+          - { name: items, label: Skills, type: string, list: true }
+      - name: experience
+        label: Experience
+        type: object
+        list: true
+        fields:
+          - { name: role, label: Role, type: string, required: true }
+          - { name: organization, label: Organization, type: string, required: true }
+          - { name: date, label: Date, type: string }
+          - { name: bullets, label: Accomplishments, type: text, list: true }
+      - name: education
+        label: Education
+        type: object
+        list: true
+        fields:
+          - { name: school, label: School, type: string, required: true }
+          - { name: program, label: Program, type: string, required: true }
+          - { name: date, label: Date, type: string }
+      - { name: selectedProjects, label: Selected project titles, type: string, list: true }
+      - { name: selectedCredentials, label: Selected credential titles, type: string, list: true }
+      - { name: projectBulletLimit, label: Project bullet limit, type: number, default: 2 }

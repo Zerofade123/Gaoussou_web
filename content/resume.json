@@ -1,0 +1,39 @@
+{
+  "profile": {
+    "name": "Gaoussou Douga Keita",
+    "headline": "Software Development Specialist | CIS Student | AI, Civic Technology & Secure Systems",
+    "location": "New York, NY",
+    "email": "zerofadecloud.com@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/gaoussou-douga-keita-6548b4396",
+    "github": "https://github.com/Zerofade123",
+    "website": "https://www.zerofadecloud.com"
+  },
+  "summary": "Computer Information Systems student and selected CUNY Career Launch 2026 Software Development Specialist with hands-on experience building AI-enabled developer tools, browser-based research environments, secure workflow platforms, and deployed web applications. Interested in software engineering, applied AI, cybersecurity, and civic technology opportunities.",
+  "skillGroups": [
+    { "label": "Languages", "items": ["Rust", "Python", "JavaScript", "Java", "HTML", "CSS"] },
+    { "label": "Platforms", "items": ["JupyterLite", "Supabase", "Linux", "Windows", "VirtualBox"] },
+    { "label": "Networking & Security", "items": ["TCP/IP", "Subnetting", "VLAN fundamentals", "Wireshark", "Nmap"] },
+    { "label": "Practices", "items": ["Secure workflows", "API integration", "Troubleshooting", "Technical documentation"] }
+  ],
+  "experience": [
+    {
+      "role": "Software Development Specialist — Selected Participant",
+      "organization": "CUNY Career Launch 2026 · CUNY 2X Tech Program · BMCC CIS Department",
+      "date": "2026",
+      "bullets": [
+        "Selected and placed for the CUNY Career Launch 2026 Internship Program as a Software Development Specialist.",
+        "Preparing to apply software development, technology, and cybersecurity skills in a professional environment."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Borough of Manhattan Community College (BMCC), CUNY",
+      "program": "Associate Degree in Computer Information Systems",
+      "date": "Expected 2027"
+    }
+  ],
+  "selectedProjects": ["CUNY NYC Open Data Lab", "LANG — The Semantic Shell", "Bridge"],
+  "selectedCredentials": ["NSF AI Mobile Game Development Bootcamp", "CompTIA Network+"],
+  "projectBulletLimit": 2
+}
