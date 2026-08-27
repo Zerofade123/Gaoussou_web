@@ -4,6 +4,17 @@
   const nav = document.querySelector('#main-nav');
   const navToggle = document.querySelector('#nav-toggle');
   const themeToggle = document.querySelector('#theme-toggle');
+  const mobileActions = document.createElement('div');
+  mobileActions.className = 'nav-mobile-actions';
+  const mobileThemeToggle = document.createElement('button');
+  mobileThemeToggle.className = 'mobile-theme-toggle';
+  mobileThemeToggle.type = 'button';
+  mobileThemeToggle.setAttribute('aria-label', 'Switch theme');
+  const mobileResumeLink = document.createElement('a');
+  mobileResumeLink.href = 'resume.html';
+  mobileResumeLink.textContent = 'View résumé';
+  mobileActions.append(mobileThemeToggle, mobileResumeLink);
+  nav.append(mobileActions);
 
   const preferredTheme = localStorage.getItem('theme');
   const useLight = preferredTheme === 'light' || (!preferredTheme && matchMedia('(prefers-color-scheme: light)').matches);
@@ -12,11 +23,19 @@
     document.body.classList.toggle('light', light);
     themeToggle.textContent = light ? '☀' : '☾';
     themeToggle.setAttribute('aria-label', `Switch to ${light ? 'dark' : 'light'} theme`);
+    mobileThemeToggle.textContent = light ? 'Switch to dark theme' : 'Switch to light theme';
+    mobileThemeToggle.setAttribute('aria-label', `Switch to ${light ? 'dark' : 'light'} theme`);
     root.style.colorScheme = light ? 'light' : 'dark';
   }
 
   setTheme(useLight);
   themeToggle.addEventListener('click', () => {
+    const light = !document.body.classList.contains('light');
+    setTheme(light);
+    localStorage.setItem('theme', light ? 'light' : 'dark');
+  });
+
+  mobileThemeToggle.addEventListener('click', () => {
     const light = !document.body.classList.contains('light');
     setTheme(light);
     localStorage.setItem('theme', light ? 'light' : 'dark');
