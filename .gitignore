@@ -1,0 +1,15 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Generated output and dependencies
+node_modules/
+dist/
+coverage/
+*.log

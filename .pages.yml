@@ -1,0 +1,45 @@
+media:
+  input: assets/uploads
+  output: /assets/uploads
+
+content:
+  - name: projects
+    label: Projects
+    type: file
+    path: content/projects.json
+    fields:
+      - name: projects
+        label: Projects
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Project title, type: string, required: true }
+          - { name: category, label: Category, type: string, required: true }
+          - { name: status, label: Status, type: string, required: true }
+          - { name: summary, label: Short summary, type: text, required: true }
+          - { name: details, label: Additional details, type: text }
+          - { name: technologies, label: Technologies, type: string, list: true }
+          - { name: link, label: Project URL, type: string }
+          - { name: linkLabel, label: Link label, type: string }
+          - { name: image, label: Project image, type: image }
+          - { name: featured, label: Featured, type: boolean, default: false }
+          - { name: published, label: Published, type: boolean, default: true }
+
+  - name: credentials
+    label: Credentials
+    type: file
+    path: content/credentials.json
+    fields:
+      - name: credentials
+        label: Credentials
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Credential title, type: string, required: true }
+          - { name: issuer, label: Issuer, type: string, required: true }
+          - { name: type, label: Credential type, type: string }
+          - { name: status, label: Status, type: string, required: true }
+          - { name: year, label: Year, type: string }
+          - { name: summary, label: Summary, type: text }
+          - { name: image, label: Certificate image, type: image }
+          - { name: published, label: Published, type: boolean, default: true }
