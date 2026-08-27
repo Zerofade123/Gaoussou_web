@@ -10,10 +10,45 @@
   },
   "summary": "Computer Information Systems student and selected CUNY Career Launch 2026 Software Development Specialist with hands-on experience building AI-enabled developer tools, browser-based research environments, secure workflow platforms, and deployed web applications. Interested in software engineering, applied AI, cybersecurity, and civic technology opportunities.",
   "skillGroups": [
-    { "label": "Languages", "items": ["Rust", "Python", "JavaScript", "Java", "HTML", "CSS"] },
-    { "label": "Platforms", "items": ["JupyterLite", "Supabase", "Linux", "Windows", "VirtualBox"] },
-    { "label": "Networking & Security", "items": ["TCP/IP", "Subnetting", "VLAN fundamentals", "Wireshark", "Nmap"] },
-    { "label": "Practices", "items": ["Secure workflows", "API integration", "Troubleshooting", "Technical documentation"] }
+    {
+      "label": "Languages",
+      "items": [
+        "Java",
+        "Python",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "label": "Platforms",
+      "items": [
+        "JupyterLite",
+        "Supabase",
+        "Linux",
+        "Windows",
+        "VirtualBox"
+      ]
+    },
+    {
+      "label": "Networking & Security",
+      "items": [
+        "TCP/IP",
+        "Subnetting",
+        "VLAN fundamentals",
+        "Wireshark",
+        "Nmap"
+      ]
+    },
+    {
+      "label": "Practices",
+      "items": [
+        "Secure workflows",
+        "API integration",
+        "Troubleshooting",
+        "Technical documentation",
+        "Problem Solving "
+      ]
+    }
   ],
   "experience": [
     {
@@ -33,7 +68,14 @@
       "date": "Expected 2027"
     }
   ],
-  "selectedProjects": ["CUNY NYC Open Data Lab", "LANG — The Semantic Shell", "Bridge"],
-  "selectedCredentials": ["NSF AI Mobile Game Development Bootcamp", "CompTIA Network+"],
+  "selectedProjects": [
+    "CUNY NYC Open Data Lab",
+    "LANG — The Semantic Shell",
+    "Bridge"
+  ],
+  "selectedCredentials": [
+    "NSF AI Mobile Game Development Bootcamp",
+    "CompTIA Network+"
+  ],
   "projectBulletLimit": 2
 }
