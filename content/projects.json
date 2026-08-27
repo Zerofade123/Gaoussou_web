@@ -6,10 +6,15 @@
       "status": "Active prototype",
       "summary": "An open-source, browser-based research workspace for turning official NYC Open Data into interactive Python investigations.",
       "details": "Combines NYC dataset discovery, JupyterLite, private investigation folders, direct data loading, and a submission and review workflow.",
-      "technologies": ["Python", "JupyterLite", "JavaScript", "Supabase", "NYC Open Data"],
+      "technologies": [
+        "Python",
+        "JupyterLite",
+        "JavaScript",
+        "Supabase",
+        "NYC Open Data"
+      ],
       "link": "https://github.com/BMCC-OPEN-DATA-LAB/cuny-open-data-platform",
       "linkLabel": "View repository",
-      "image": "",
       "featured": true,
       "published": true
     },
@@ -19,10 +24,13 @@
       "status": "Closed source",
       "summary": "A Rust-based natural-language interface that translates plain-English intent into local Linux and WSL system actions.",
       "details": "Supports common file and folder operations and runs locally with a private inference engine. Source remains private pending a future security review.",
-      "technologies": ["Rust", "Local AI", "Linux", "WSL", "CLI"],
-      "link": "",
-      "linkLabel": "",
-      "image": "",
+      "technologies": [
+        "Rust",
+        "Local AI",
+        "Linux",
+        "WSL",
+        "CLI"
+      ],
       "featured": true,
       "published": true
     },
@@ -32,10 +40,12 @@
       "status": "Private project",
       "summary": "A secure internship engagement platform built for BMCC's Internship and Experiential Learning Office.",
       "details": "Centralizes student records, events, registration, check-in, follow-ups, reports, employer relationships, and student visits.",
-      "technologies": ["Workflow Automation", "Secure Records", "Reporting", "Event Management"],
-      "link": "",
-      "linkLabel": "",
-      "image": "",
+      "technologies": [
+        "Workflow Automation",
+        "Secure Records",
+        "Reporting",
+        "Event Management"
+      ],
       "featured": true,
       "published": true
     },
@@ -45,10 +55,11 @@
       "status": "Private project",
       "summary": "A private workspace that organizes job-search activity, notes, files, and supporting tools in one place.",
       "details": "Designed to reduce fragmented workflows and make career planning easier to track and maintain.",
-      "technologies": ["Productivity", "File Organization", "Workflow Design"],
-      "link": "",
-      "linkLabel": "",
-      "image": "",
+      "technologies": [
+        "Productivity",
+        "File Organization",
+        "Workflow Design"
+      ],
       "featured": false,
       "published": true
     },
@@ -58,10 +69,14 @@
       "status": "Live",
       "summary": "A browser-based tool for binary, hexadecimal, and decimal conversion with input validation.",
       "details": "Applies computing concepts related to number systems and data representation through a responsive interface.",
-      "technologies": ["HTML", "CSS", "JavaScript"],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
       "link": "https://bitwise-studio.zerofadecloud.com",
       "linkLabel": "Open live project",
-      "image": "Zerofade tech background .jpeg",
+      "image": "/assets/uploads/BITWISE STUDIO.png",
       "featured": false,
       "published": true
     }
