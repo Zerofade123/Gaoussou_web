@@ -63,7 +63,9 @@
         "File Organization",
         "Workflow Design"
       ],
-      "featured": false,
+      "link": "https://haven.zerofadecloud.com/",
+      "image": "/assets/uploads/IMG_3986.jpeg",
+      "featured": true,
       "published": true
     },
     {
