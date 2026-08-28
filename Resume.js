@@ -113,15 +113,13 @@
       const credentials = (credentialData.credentials || []).filter(item => item.published && credentialNames.has(item.title));
       if (credentials.length) {
         const credentialSection = section('Certifications & training');
-        credentials.forEach(entry => {
-          const item = make('article', 'item');
-          const head = make('div', 'item-head');
-          const title = make('div');
-          title.append(make('h3', '', entry.title), make('p', 'project-meta', entry.issuer));
-          head.append(title, make('span', '', `${entry.status}${entry.year ? ` · ${entry.year}` : ''}`));
-          item.append(head);
-          credentialSection.append(item);
+        const credentialLine = make('p', 'credential-list');
+        credentials.forEach((entry, index) => {
+          credentialLine.append(make('strong', '', entry.title));
+          credentialLine.append(document.createTextNode(` — ${entry.status}${entry.year ? `, ${entry.year}` : ''}`));
+          if (index < credentials.length - 1) credentialLine.append(document.createTextNode('  •  '));
         });
+        credentialSection.append(credentialLine);
         root.append(credentialSection);
       }
     } catch (error) {
