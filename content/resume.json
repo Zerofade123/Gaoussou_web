@@ -8,15 +8,15 @@
     "github": "https://github.com/Zerofade123",
     "website": "https://www.zerofadecloud.com"
   },
-  "summary": "Computer Information Systems student and emerging software engineer with hands-on experience building AI-enabled developer tools, civic-technology platforms, secure workflow systems, and deployed web applications. Enjoys understanding complex systems, solving practical problems, and turning ideas into useful software. Selected for CUNY Career Launch 2026 as a Software Development Specialist, with interests in cloud infrastructure, applied AI, secure software engineering, and the Microsoft technology ecosystem.",
+  "summary": "Computer Information Systems student and emerging software engineer who builds AI-enabled developer tools, civic-technology platforms, and secure workflow systems. Selected for CUNY Career Launch 2026 as a Software Development Specialist, with interests in cloud infrastructure, applied AI, and secure software engineering.",
   "skillGroups": [
     {
       "label": "Languages",
       "items": [
-        "Java",
-        "Python",
-        "HTML",
-        "CSS"
+        "Java (primary language)",
+        "Python (prior experience; refreshing)",
+        "HTML/CSS (working knowledge)",
+        "JavaScript (project experience)"
       ]
     },
     {
@@ -25,16 +25,13 @@
         "JupyterLite",
         "Supabase",
         "Linux",
-        "Windows",
-        "VirtualBox"
+        "Git/GitHub"
       ]
     },
     {
       "label": "Networking & Security",
       "items": [
         "TCP/IP",
-        "Subnetting",
-        "VLAN fundamentals",
         "Wireshark",
         "Nmap"
       ]
@@ -46,7 +43,7 @@
         "API integration",
         "Troubleshooting",
         "Technical documentation",
-        "Problem Solving "
+        "Problem solving"
       ]
     }
   ],
@@ -56,8 +53,7 @@
       "organization": "CUNY Career Launch 2026 · CUNY 2X Tech Program · BMCC CIS Department",
       "date": "2026",
       "bullets": [
-        "Selected and placed for the CUNY Career Launch 2026 Internship Program as a Software Development Specialist.",
-        "Preparing to apply software development, technology, and cybersecurity skills in a professional environment."
+        "Selected and placed for the CUNY Career Launch 2026 Internship Program as a Software Development Specialist through the CUNY 2X Tech Program."
       ]
     }
   ],
@@ -77,5 +73,5 @@
     "NSF AI Mobile Game Development Bootcamp",
     "CompTIA Network+"
   ],
-  "projectBulletLimit": 2
+  "projectBulletLimit": 1
 }
